@@ -1,6 +1,15 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="animate__animated animate__bounce">Comics app</h1>
-      <p class="lead animate__animated animate__bounce">Esta es una app de comics</p>
+      <h1 class="animate__animated animate__bounce">MOTOS</h1>
+      <p class="lead animate__animated animate__bounce">Las motos más rapidas</p>
+    </div>
+    <div class="card-container">
+      <div class="card" *ngFor="let card of cards">
+        <img [src]="card.imgSrc" alt="Imagen de {{ card.title }}" class="card-img">
+        <div class="card-content">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
     </div>
   </div>

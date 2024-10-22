@@ -3,7 +3,6 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand">
-                    <img src="assets/img/A-64.png" alt="Bootstrap" width="30" height="24">
                 </a>
             </div>
         </nav>
@@ -15,17 +14,7 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLinkActive="active" [routerLink]="['home']">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" [routerLink]="['heroes']">Heroes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" [routerLink]="['about']">About</a>
-                </li>
             </ul>
-            <form class="d-flex" (submit)="buscarHeroe(searchInput.value); $event.preventDefault()">
-                <input #searchInput class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
         </div>
     </div>
 </nav>
