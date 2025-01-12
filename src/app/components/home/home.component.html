@@ -1,15 +1,12 @@
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="animate__animated animate__bounce">MOTOS</h1>
-      <p class="lead animate__animated animate__bounce">Las motos más rapidas</p>
-    </div>
-    <div class="card-container">
-      <div class="card" *ngFor="let card of cards">
-        <img [src]="card.imgSrc" alt="Imagen de {{ card.title }}" class="card-img">
-        <div class="card-content">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.description }}</p>
-        </div>
-      </div>
-    </div>
+<div class="card-container">
+  <img src="assets/img/01.jpg" alt="Decoración izquierda" class="side-image left" />
+  <div class="card">
+    <h1>💖 ¡Celebrando nuestra Amistad! 💖</h1>
+    <p>
+      Querida amiga, eres un tesoro invaluable en mi vida. Gracias por llenar mis días de alegría,
+      risas y recuerdos inolvidables. ¡Hoy celebramos nuestra hermosa amistad!
+    </p>
+    <button (click)="celebrate()" class="celebrate-button">🎉 Celebrar Amistad</button>
   </div>
+  <img src="assets/img/02.jpg" alt="Decoración derecha" class="side-image right" />
+</div>
